@@ -9,7 +9,7 @@ URL:            https://github.com/icecc/%{name}
 Source0:        https://github.com/icecc/archive/v%{version}.tar.gz
 
 BuildRequires:  qt5-qtbase-devel >= 5.2.0
-BuildRequires:  qt5-qtbase-gui >= 5.6.1
+BuildRequires:  qt5-qtbase-gui
 BuildRequires:  qtsinglecoreapplication-qt5-devel
 BuildRequires:  libcap-ng-devel
 BuildRequires:  lzo-devel
