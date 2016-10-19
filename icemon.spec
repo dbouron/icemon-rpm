@@ -41,7 +41,7 @@ cd build
 
 %files
 %license COPYING
-%doc README.md
+%doc README.md CHANGELOG.md
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
