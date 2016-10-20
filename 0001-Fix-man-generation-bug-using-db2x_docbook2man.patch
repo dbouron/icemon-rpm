@@ -1,0 +1,26 @@
+From 2089e3ffc5b00e26f238a0d40ad762aeedfab4dc Mon Sep 17 00:00:00 2001
+From: Dimitri Bouron <bouron.d@gmail.com>
+Date: Thu, 29 Sep 2016 18:01:59 +0200
+Subject: [PATCH] Fix man generation bug using db2x_docbook2man instead of
+ docbook2man
+
+---
+ cmake/modules/FindDocbook2X.cmake | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/cmake/modules/FindDocbook2X.cmake b/cmake/modules/FindDocbook2X.cmake
+index 47330e4..81d9f7a 100644
+--- a/cmake/modules/FindDocbook2X.cmake
++++ b/cmake/modules/FindDocbook2X.cmake
+@@ -51,7 +51,7 @@ endmacro()
+ if (DOCBOOK_TO_MAN_EXECUTABLE)
+     _check_docbook2x_executable()
+ else()
+-    foreach(test_exec docbook2x-man docbook-to-man docbook2man)
++    foreach(test_exec docbook2x-man docbook-to-man db2x_docbook2man docbook2man)
+         find_program(DOCBOOK_TO_MAN_EXECUTABLE
+             NAMES ${test_exec}
+         )
+-- 
+2.7.4
+
