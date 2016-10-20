@@ -6,7 +6,7 @@ Summary:        Icecream GUI monitor
 Group:          Development/Tools
 License:        GPLv2+
 URL:            https://github.com/icecc/%{name}
-Source0:        https://github.com/icecc/archive/v%{version}.tar.gz
+Source0:        https://github.com/icecc/%{name}/archive/v%{version}.tar.gz
 Patch1:         0001-Fix-man-generation-bug-using-db2x_docbook2man.patch
 
 BuildRequires:  qt5-qtbase-devel >= 5.2.0
